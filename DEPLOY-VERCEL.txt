@@ -1,0 +1,98 @@
+═══════════════════════════════════════════════════════════════
+   ✅ PROYEK SUDAH DI GITHUB!
+═══════════════════════════════════════════════════════════════
+
+🎉 Repository: https://github.com/roaalifgantengbanget-pixel/orang-hitam
+
+✅ Push berhasil!
+✅ Semua file sudah terupload
+✅ Foto-foto sudah ada di repository
+
+═══════════════════════════════════════════════════════════════
+
+🚀 LANGKAH SELANJUTNYA: DEPLOY KE VERCEL
+
+1. Buka: https://vercel.com
+
+2. Klik "Sign Up" atau "Login"
+   → Pilih "Continue with GitHub"
+
+3. Setelah login, klik "Add New..."
+   → Pilih "Project"
+
+4. Import Repository:
+   → Cari: roaalifgantengbanget-pixel/orang-hitam
+   → Klik "Import"
+
+5. Configure Project:
+   Framework Preset: Next.js (otomatis terdeteksi)
+   Root Directory: ./
+   Build Command: npm run build (otomatis)
+   Output Directory: .next (otomatis)
+   
+   → Klik "Deploy"
+
+6. Tunggu 1-2 menit...
+
+7. SELESAI! 🎉
+   Website Anda akan online dengan domain gratis seperti:
+   https://orang-hitam.vercel.app
+   atau
+   https://orang-hitam-xxx.vercel.app
+
+═══════════════════════════════════════════════════════════════
+
+🌐 CUSTOM DOMAIN (OPSIONAL):
+
+Jika Anda punya domain sendiri (misal: usahababulu.com):
+
+1. Di dashboard Vercel, buka project Anda
+2. Klik tab "Settings"
+3. Klik "Domains"
+4. Tambahkan domain Anda
+5. Ikuti instruksi untuk setting DNS
+
+═══════════════════════════════════════════════════════════════
+
+🔄 AUTO DEPLOY:
+
+Setiap kali Anda push perubahan ke GitHub,
+Vercel akan otomatis deploy ulang website Anda!
+
+Cara update website:
+1. Edit file di folder nextjs-usaha
+2. git add .
+3. git commit -m "Update website"
+4. git push
+5. Vercel otomatis deploy! ✨
+
+═══════════════════════════════════════════════════════════════
+
+⚡ FITUR VERCEL GRATIS:
+
+✓ Unlimited deployments
+✓ Automatic HTTPS
+✓ Global CDN
+✓ Auto scaling
+✓ Analytics
+✓ Preview deployments
+
+═══════════════════════════════════════════════════════════════
+
+📱 SHARE WEBSITE:
+
+Setelah deploy, Anda bisa share link website ke:
+- WhatsApp
+- Facebook
+- Instagram
+- Google Maps (tambahkan di deskripsi bisnis)
+
+═══════════════════════════════════════════════════════════════
+
+🎉 SELAMAT!
+
+Website Anda sudah siap online!
+Tinggal deploy ke Vercel dan website langsung bisa diakses
+oleh siapa saja di seluruh dunia! 🌍
+
+═══════════════════════════════════════════════════════════════
