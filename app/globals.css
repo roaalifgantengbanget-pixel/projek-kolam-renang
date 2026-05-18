@@ -2,20 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Inter', sans-serif;
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
 }
 
-.hero-pattern {
-  background-color: #14532d;
-  background-image: linear-gradient(rgba(20, 83, 45, 0.9), rgba(20, 83, 45, 0.8)), url('/images/hero-background.jpg');
-  background-size: cover;
-  background-position: center;
-}
+@layer components {
+  .hero-pattern {
+    background-color: #14532d;
+    background-image: linear-gradient(rgba(20, 83, 45, 0.9), rgba(20, 83, 45, 0.8)), url('/images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 
-.fade-in {
-  animation: fadeIn 1s ease-in forwards;
-  opacity: 0;
+  .fade-in {
+    animation: fadeIn 1s ease-in forwards;
+    opacity: 0;
+  }
 }
 
 @keyframes fadeIn {
