@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Usaha Babulu Km. 53 - Next.js Website
 
-## Getting Started
+Website untuk usaha di Babulu Darat Km. 53, Penajam Paser Utara, Kalimantan Timur.
 
-First, run the development server:
+## 🚀 Teknologi
+
+- **Next.js 16** - React Framework
+- **TypeScript** - Type Safety
+- **Tailwind CSS** - Styling
+- **Google Maps** - Lokasi & Navigasi
+- **WhatsApp Integration** - Kontak Langsung
+
+## 📦 Instalasi
+
+```bash
+npm install
+```
+
+## 🛠️ Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000) di browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Build Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📸 Mengganti Foto
 
-To learn more about Next.js, take a look at the following resources:
+Foto-foto disimpan di folder `public/images/`:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `hero-background.jpg` - Background header utama
+- `produk-1.jpg` - Foto produk/layanan 1
+- `produk-2.jpg` - Foto produk/layanan 2
+- `fasilitas.jpg` - Foto area parkir/fasilitas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Ganti file-file tersebut dengan foto Anda sendiri.
 
-## Deploy on Vercel
+## ⚙️ Konfigurasi
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Nomor WhatsApp
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit di `app/page.tsx` baris 48:
+
+```typescript
+const nomorWA = "6281234567890"; // Ganti dengan nomor Anda
+```
+
+### Informasi Usaha
+
+Edit teks di `app/page.tsx` untuk mengubah:
+- Nama usaha
+- Deskripsi produk/layanan
+- Jam operasional
+- Alamat
+
+## 🌐 Deploy ke Vercel
+
+1. Push ke GitHub
+2. Import project di [Vercel](https://vercel.com)
+3. Deploy otomatis!
+
+## 📝 Push ke GitHub
+
+```bash
+# Pastikan sudah login ke GitHub
+git remote add origin https://github.com/roaalifgantengbanget-pixel/orang-hitam.git
+git branch -M main
+git push -u origin main
+```
+
+## 📄 Lisensi
+
+© 2026 Usaha Babulu Km. 53. All rights reserved.
