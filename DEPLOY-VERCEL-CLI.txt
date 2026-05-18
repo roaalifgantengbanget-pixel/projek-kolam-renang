@@ -1,0 +1,202 @@
+═══════════════════════════════════════════════════════════════
+   🚀 CARA DEPLOY KE VERCEL (2 CARA)
+═══════════════════════════════════════════════════════════════
+
+✅ Vercel CLI sudah terinstall!
+✅ Semua perubahan sudah di-push ke GitHub!
+✅ Siap deploy!
+
+═══════════════════════════════════════════════════════════════
+
+🎯 CARA 1: DEPLOY DENGAN VERCEL CLI (TERCEPAT!)
+
+1. Login ke Vercel:
+   vercel login
+
+2. Deploy:
+   cd nextjs-usaha
+   vercel
+
+3. Ikuti prompt:
+   ? Set up and deploy "nextjs-usaha"? [Y/n] Y
+   ? Which scope? [Pilih account Anda]
+   ? Link to existing project? [N]
+   ? What's your project's name? projek-kolam-renang
+   ? In which directory is your code located? ./
+   
+4. Deploy production:
+   vercel --prod
+
+5. SELESAI! 🎉
+   Website Anda akan online di:
+   https://projek-kolam-renang.vercel.app
+
+═══════════════════════════════════════════════════════════════
+
+🌐 CARA 2: DEPLOY LEWAT WEBSITE VERCEL (MUDAH!)
+
+1. Buka: https://vercel.com
+
+2. Klik "Sign Up" atau "Login"
+   → Pilih "Continue with GitHub"
+
+3. Setelah login, klik "Add New..."
+   → Pilih "Project"
+
+4. Import Repository:
+   → Cari: roaalifgantengbanget-pixel/projek-kolam-renang
+   → Klik "Import"
+
+5. Configure Project:
+   Framework Preset: Next.js ✓ (otomatis terdeteksi)
+   Root Directory: ./
+   Build Command: npm run build ✓ (otomatis)
+   Output Directory: .next ✓ (otomatis)
+   Install Command: npm install ✓ (otomatis)
+   
+   → Klik "Deploy"
+
+6. Tunggu 1-2 menit...
+   ⏳ Building...
+   ⏳ Deploying...
+
+7. SELESAI! 🎉
+   ✅ Deployment Complete!
+   
+   Website Anda online di:
+   https://projek-kolam-renang.vercel.app
+   atau
+   https://projek-kolam-renang-xxx.vercel.app
+
+═══════════════════════════════════════════════════════════════
+
+📝 COMMAND LENGKAP (COPY-PASTE):
+
+# Login
+vercel login
+
+# Deploy (development)
+cd "C:\Users\Administrator\Desktop\adrian hitam\nextjs-usaha"
+vercel
+
+# Deploy (production)
+vercel --prod
+
+═══════════════════════════════════════════════════════════════
+
+🔄 CARA UPDATE WEBSITE NANTI:
+
+Setiap kali Anda push ke GitHub, Vercel otomatis deploy ulang!
+
+1. Edit file yang ingin diubah
+2. git add .
+3. git commit -m "Update website"
+4. git push
+
+Vercel otomatis detect dan deploy! ✨
+
+Atau manual:
+vercel --prod
+
+═══════════════════════════════════════════════════════════════
+
+⚙️ ENVIRONMENT VARIABLES (OPSIONAL):
+
+Jika butuh environment variables:
+
+1. Di Vercel Dashboard:
+   → Settings → Environment Variables
+
+2. Atau via CLI:
+   vercel env add NAMA_VARIABLE
+
+═══════════════════════════════════════════════════════════════
+
+🌐 CUSTOM DOMAIN (OPSIONAL):
+
+Jika punya domain sendiri (misal: usahababulu.com):
+
+1. Di Vercel Dashboard:
+   → Settings → Domains
+   → Add Domain
+
+2. Ikuti instruksi untuk setting DNS
+
+3. Atau via CLI:
+   vercel domains add usahababulu.com
+
+═══════════════════════════════════════════════════════════════
+
+📊 MONITORING:
+
+Setelah deploy, Anda bisa:
+
+✓ Lihat analytics di dashboard
+✓ Monitor performance
+✓ Lihat deployment logs
+✓ Rollback ke versi sebelumnya
+
+═══════════════════════════════════════════════════════════════
+
+❓ TROUBLESHOOTING:
+
+Q: Build failed?
+A: Cek logs di Vercel dashboard
+   Pastikan npm run build berhasil di local
+
+Q: Website tidak muncul?
+A: Tunggu 1-2 menit setelah deploy
+   Clear browser cache (Ctrl + F5)
+
+Q: Foto tidak muncul?
+A: Pastikan foto ada di public/images/
+   Path harus /images/nama-foto.jpg
+
+Q: Vercel login tidak bisa?
+A: Gunakan cara 2 (lewat website)
+   Lebih mudah dan tidak perlu CLI
+
+═══════════════════════════════════════════════════════════════
+
+🎉 SETELAH DEPLOY:
+
+✅ Website online 24/7
+✅ HTTPS otomatis
+✅ Global CDN (loading cepat)
+✅ Auto scaling
+✅ Free domain .vercel.app
+✅ Analytics gratis
+
+Share link website Anda:
+- WhatsApp
+- Facebook
+- Instagram
+- Google Maps
+
+═══════════════════════════════════════════════════════════════
+
+🚀 REKOMENDASI:
+
+Gunakan CARA 2 (lewat website) karena:
+✓ Lebih mudah
+✓ Visual interface
+✓ Tidak perlu command line
+✓ Auto-detect settings
+✓ Bisa lihat preview
+
+═══════════════════════════════════════════════════════════════
+
+📞 SUPPORT:
+
+Dokumentasi: https://vercel.com/docs
+Discord: https://vercel.com/discord
+Twitter: @vercel
+
+═══════════════════════════════════════════════════════════════
+
+🎉 SELAMAT!
+
+Website Anda siap online!
+Tinggal pilih cara 1 atau 2 dan deploy! 🚀
+
+═══════════════════════════════════════════════════════════════
