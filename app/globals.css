@@ -7,15 +7,22 @@
     @apply antialiased;
     font-family: 'Inter', sans-serif;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
+/* Hero Background Pattern */
 .hero-pattern {
   background-color: #14532d;
   background-image: linear-gradient(rgba(20, 83, 45, 0.9), rgba(20, 83, 45, 0.8)), url('/images/hero-background.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
+/* Fade In Animation */
 .fade-in {
   animation: fadeIn 1s ease-in forwards;
   opacity: 0;
@@ -32,6 +39,21 @@
   }
 }
 
+/* Pulse Animation for Status Badge */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Brand Colors */
 .text-brand-50 { color: #f0fdf4; }
 .text-brand-100 { color: #dcfce7; }
 .text-brand-500 { color: #22c55e; }
@@ -46,3 +68,60 @@
 
 .hover\:text-brand-600:hover { color: #16a34a; }
 .hover\:bg-brand-600:hover { background-color: #16a34a; }
+.hover\:bg-brand-400:hover { background-color: #4ade80; }
+
+/* Smooth Transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Card Hover Effects */
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Backdrop Blur */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #16a34a;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #14532d;
+}
+
+/* Responsive Image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Button Hover Effects */
+button:hover, a:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+button:active, a:active {
+  transform: translateY(0);
+}
+

@@ -1,6 +1,50 @@
 'use client';
 
+import { useEffect } from 'react';
+import ScrollToTop from './components/ScrollToTop';
+
 export default function Home() {
+  // JavaScript untuk navbar scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+        if (window.scrollY > 50) {
+          navbar.classList.add('shadow-md');
+          navbar.classList.remove('bg-white/90');
+          navbar.classList.add('bg-white');
+        } else {
+          navbar.classList.remove('shadow-md');
+          navbar.classList.remove('bg-white');
+          navbar.classList.add('bg-white/90');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Smooth scroll untuk anchor links
+  useEffect(() => {
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = e.target as HTMLAnchorElement;
+      if (target.tagName === 'A' && target.hash) {
+        const href = target.getAttribute('href');
+        if (href?.startsWith('#')) {
+          e.preventDefault();
+          const element = document.querySelector(href);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }
+    };
+
+    document.addEventListener('click', handleAnchorClick);
+    return () => document.removeEventListener('click', handleAnchorClick);
+  }, []);
+
   return (
     <>
       <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
@@ -166,6 +210,8 @@ export default function Home() {
           <p className="mt-2 text-sm text-gray-500">Jl. Propinsi Km. 53, Penajam Paser Utara, Kalimantan Timur.</p>
         </div>
       </footer>
+
+      <ScrollToTop />
     </>
   );
 }
