@@ -1,26 +1,48 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply antialiased;
+    font-family: 'Inter', sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.hero-pattern {
+  background-color: #14532d;
+  background-image: linear-gradient(rgba(20, 83, 45, 0.9), rgba(20, 83, 45, 0.8)), url('/images/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
 }
+
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-brand-50 { color: #f0fdf4; }
+.text-brand-100 { color: #dcfce7; }
+.text-brand-500 { color: #22c55e; }
+.text-brand-600 { color: #16a34a; }
+.text-brand-900 { color: #14532d; }
+
+.bg-brand-50 { background-color: #f0fdf4; }
+.bg-brand-100 { background-color: #dcfce7; }
+.bg-brand-500 { background-color: #22c55e; }
+.bg-brand-600 { background-color: #16a34a; }
+.bg-brand-900 { background-color: #14532d; }
+
+.hover\:text-brand-600:hover { color: #16a34a; }
+.hover\:bg-brand-600:hover { background-color: #16a34a; }
